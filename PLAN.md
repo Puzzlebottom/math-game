@@ -8,13 +8,17 @@
 
   #### State
   - players (Player[])
-  - current turn (number)
+  - active_player_index (number)
 
   #### Methods
-  - get_player_name
+  - run
+  - create_players
   - winner_exists?
-  - get_winner
-  - pose_question
+  - winner
+  - pose_question(player, question)
+  - run_turn(player)
+  - game_status
+
 
 ### Player
 - Instantiated with an argument NAME, lives 3, score 0
@@ -25,10 +29,10 @@
   - score (number)
 
   #### Methods
-  - attr_reader :name
-  - has_lives?
+  - lives?
   - increment_score
   - decrement_lives
+  _ to_s
 
 ### Question
 - Instantiated without arguments
@@ -41,5 +45,5 @@
 
   #### Methods
   - get_random_number
-  - to_s(num1, num2)
+  - to_s
   - check_answer?(response)

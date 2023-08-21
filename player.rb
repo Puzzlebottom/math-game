@@ -1,6 +1,4 @@
 class Player
-  attr_reader :name, :lives, :score
-
   def initialize(name)
     @name = name
     @lives = 3
@@ -17,5 +15,9 @@ class Player
 
   def decrement_lives
     @lives -= 1
+  end
+
+  def to_s
+    "#{@name}: #{@lives}/3 lives, #{@score} points"
   end
 end
