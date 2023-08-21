@@ -32,7 +32,7 @@
   - lives?
   - increment_score
   - decrement_lives
-  _ to_s
+  - to_s
 
 ### Question
 - Instantiated without arguments
