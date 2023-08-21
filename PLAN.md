@@ -38,7 +38,6 @@
   #### State
   - first number
   - second number
-  - answer
 
   #### Methods
   - get_random_number
